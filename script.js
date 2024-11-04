@@ -1,5 +1,5 @@
 let githubUser = 'gaplovesin'
-let repo = 'gaplovesin.github.action'
+let repo = 'gaplovezin.github.io'
 let imgFolder = 'myImages'
 
 async function login() {
@@ -39,7 +39,7 @@ async function loadAlbums(username) {
 }
 
 async function loadAlbum(username, albumName) {
-    const response = await fetch(`https://api.github.com/repos/${githubUser}/${repo}/contents/${username}/${albumName}`);
+    const response = await fetch(`https://api.github.com/repos/${githubUser}/${repo}/contents/${imgFolder}/${albumName}`);
     const images = await response.json();
 
     const albumContainer = document.createElement('div');
